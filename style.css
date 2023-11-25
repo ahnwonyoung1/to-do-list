@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: url('jpg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    padding: 2rem 1rem;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: aliceblue;
+}
+
+header h2 {
+    font-size: 4rem;
+    font-weight: 300;
+    margin: 0 auto;
+    color: #000000;
+}
+
+input, button {
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+#newtask {
+    padding: 15px;
+    background-color: #82A0D8;
+    color: #f3f3f3;
+    border-radius: 15px;
+}
+
+#newtask {
+    color: pink;
+	font-size: 1rem;
+	font-weight: 700;
+	background:#82A0D8;
+	cursor: pointer;
+	transition: 0.4s;
+}
+
+#taskInput {
+    padding: 15px;
+    background-color: #82A0D8;
+    color: #f2f2f2;
+    border-radius: 15px;
+    width: 70%;
+}
+
+#taskInput::placeholder {
+    color: #fff;
+}
+
+
+main {
+	flex: 1 1 0%;
+	max-width: 800px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.task-list {
+	padding: 1rem;
+}
+
+.task-list h2 {
+	font-size: 1.5rem;
+	font-weight: 300;
+	color: #000000;
+	margin-bottom: 1rem;
+}
+
+#tasks .task {
+    display: flex;
+    background-color: #bdffdb;
+    padding: 12px;
+}
+
+#tasks .task .content .text {
+    color: #000000;
+    display:block;
+    font-size: 1.125rem;
+}
+
+#tasks .task .content .text:not(:read-only) {
+	color: pink;
+}
+
+#tasks .task .actions {
+	display: flex;
+	margin: 0 -0.5rem;
+}
+
+.actions {
+    margin: 0, auto;
+}
+
+.task .actions button {
+	cursor: pointer;
+	margin: 0 0.5rem;
+	font-size: 1.125rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	transition: 0.4s;
+}
+
+.task .actions button:hover {
+    opacity: 0.8;
+    background: pink;
+    border-radius: 10px;
+}
+
+.task .actions button:active {
+	opacity: 0.6;
+}
+
+.task .actions .edit {
+    color: #82A0D8;
+}
+
+
+.content {
+    flex-grow: 1;
+}
+
+.text {
+    width: 100%;
+    padding: 5px;
+}
+
+
